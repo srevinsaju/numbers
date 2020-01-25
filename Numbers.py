@@ -317,7 +317,7 @@ class Numbers:
     def gen_nos(self):
         num_list = []
         for i in range(g.nos_k):
-            num_list.append(random.randint(1, g.max_n))
+            num_list.append(random.randint(1, int(g.max_n)))
         return num_list
 
     def gen_aim(self):
@@ -377,7 +377,7 @@ class Numbers:
             if self.anim_tn == 15:
                 self.anim_end()
                 return
-            g.aim = random.randint(5, self.anim_mx)
+            g.aim = random.randint(5, int(self.anim_mx))
 
     def anim_end(self):
         if self.anim_ms is None:
